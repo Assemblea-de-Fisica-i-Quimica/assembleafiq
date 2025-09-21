@@ -91,7 +91,7 @@ figure, figcaption {
     text-shadow: 2px 2px black;
     margin: 0;
     line-height: 1.4;
-    padding: 0 10px;
+    padding-bottom: 10px;
 }
 
 body {
@@ -185,7 +185,14 @@ img, video {
   
   /* Adjust video size */
   #introvid {
-    height: 200px;
+    max-height: 300px;
+    display: block;
+    min-width: 100%;
+    object-fit: cover;
+    margin:0;
+    padding:0;
+    border-radius: 0;
+    border: 0;
   }
   
   /* Adjust contact section */
