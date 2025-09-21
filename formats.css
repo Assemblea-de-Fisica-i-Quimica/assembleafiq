@@ -1,0 +1,245 @@
+* {
+    font-family:"Impact", Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    color:white;
+}
+
+header {
+    position:sticky;
+    top:0;
+    background-color: #E84545;
+    margin: 0;
+}
+
+header table{
+    cursor: pointer;
+    width: 100%;
+}
+
+#three_lines {
+    padding-top: 10px;
+}
+
+nav {
+    height:auto;
+    overflow: hidden;
+    transition: max-height 1s;
+    margin: 0;
+    font-size: large;
+    max-height: 0;
+}
+
+nav table {
+    width:100%;
+    background-color: #903749;
+    padding: 1%;
+    font-size: 22px;
+}
+
+header table:hover + nav, nav:hover {
+    max-height: 100px;
+}
+
+#introvid {
+    display: block;
+    min-width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    margin:0;
+    padding:0;
+    border-radius: 0;
+}
+
+p {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+}
+
+[href] {
+    color:white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
+ul  {
+    display: inline-block;
+    font-size: 22px;
+}
+
+#quisom ul {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
+.important {
+    font-weight: bold;
+    text-align: center;
+}
+
+#historia {
+    color:rgb(170, 106, 34);
+}
+
+figure, figcaption {
+    text-align: center;
+    font-size: 22px;
+    color:gold;
+    text-shadow: 2px 2px black;
+    margin: 0;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+body {
+    margin: 0;
+    background: #2B2E4A;
+}
+
+.quisom figure {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    min-height: 100px;
+    flex-grow: 2;
+    align-items: center;
+}
+
+.contacte {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%; /* Reduced margins for mobile */
+    margin-right: 5%;
+    width: 90%; /* Makes it take most of the screen width */
+    border-radius: 15px;
+    background-color: #53354A;
+    box-shadow: 0 0 5px rgba(124, 112, 132, 0.8);
+    padding: 15px; /* Adds internal spacing */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.contacte a {
+    word-break: break-word; /* Allows long text to break onto new lines */
+    overflow-wrap: break-word;
+}
+
+.contacte figure {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea {
+    background-color: #53354A;
+}
+
+img, video {
+    border-radius: 15px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Adjust text sizes for mobile */
+  p {
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  h1.important {
+    font-size: 24px;
+  }
+  
+  /* Make navigation more mobile-friendly */
+  nav table {
+    font-size: 18px;
+  }
+  
+    nav table td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Adds subtle separators */
+        margin: 5px 0; /* Adds spacing between items */
+    }
+
+    nav table tr td:last-child {
+        border-bottom: none; /* Removes border from last item */
+    }
+  
+  /* Adjust header elements */
+  header table td:first-child img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  #three_lines img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Adjust video size */
+  #introvid {
+    height: 200px;
+  }
+  
+  /* Adjust contact section */
+  .contacte {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  /* Improve touch targets */
+  nav table td a {
+    padding: 12px 0;
+    display: block;
+  }
+
+  figure, figcaption {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+  p {
+    font-size: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  h1.important {
+    font-size: 22px;
+  }
+  
+  nav table {
+    font-size: 16px;
+  }
+
+    .contacte {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
+  
+  #introvid {
+    height: 150px;
+  }
+  
+  header table td:first-child img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  #three_lines img {
+    width: 40px;
+    height: 40px;
+  }
+}
